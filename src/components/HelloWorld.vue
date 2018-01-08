@@ -2,6 +2,11 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2 v-bind:title="message">Hover-Bound Title</h2>
+    <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
       <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
@@ -26,7 +31,12 @@ export default {
   data () {
     return {
       msg: 'Hello, Vue!',
-      message: 'secret hover message!'
+      message: 'secret hover message!',
+      todos: [
+        { text: 'Learn JavaScript' },
+        { text: 'Learn Vue' },
+        { text: 'Build something awesome' }
+      ]
     }
   }
 }
