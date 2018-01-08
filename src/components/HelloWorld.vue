@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <button v-on:click="reverseMessage">Reverse Message</button>
+    <input v-model="msg">
     <h2 v-bind:title="message">Hover-Bound Title</h2>
     <ol>
     <li v-for="todo in todos">
@@ -38,12 +38,6 @@ export default {
         { text: 'Learn Vue' },
         { text: 'Build something awesome' }
       ]
-    }
-  },
-  methods: {
-    reverseMessage: () => {
-        console.log(this.a.data().msg);
-      this.msg = this.msg.split('').reverse().join('')
     }
   }
 }
