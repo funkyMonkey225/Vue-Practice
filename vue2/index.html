@@ -7,7 +7,8 @@
     <title>Growler</title>
 </head>
 <body>
-    <div id="growler">
+    <div id="growler" v-bind:style="appStyle">
+        {{appName}}
     </div>
     <script 
         type="text/javascript"
@@ -21,7 +22,11 @@
         var growler = new Vue({
             el: '#growler',
             data: {
-                appName: 'Growler'
+                appName: 'Growler',
+                appStyle: {
+                    color: 'blue',
+                    fontFamily: 'Verdana'
+                }
             }
         });
     </script>
