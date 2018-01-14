@@ -10,6 +10,7 @@
     <div id="growler" v-bind:style="{ color: isOnline? 'red':'blue'}">
         {{appName}}
     </div>
+    <button v-on:click="executeSearch">Search</button>
     <script 
         type="text/javascript"
         src="https://unpkg.com/vue">
@@ -28,6 +29,11 @@
                     fontFamily: 'Verdana'
                 },
                 isOnline: true
+            },
+            methods: {
+                executeSearch: function() {
+                    alert('aaah');
+                }
             }
         });
     </script>
