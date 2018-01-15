@@ -7,7 +7,7 @@
     <title>Growler</title>
 </head>
 <body>
-    <div id="growler" v-bind:style="{ color: isOnline? 'red':'blue'}">
+    <div id="growler">
         {{appName}}
     </div>
     <form>
@@ -31,8 +31,7 @@
                 appStyle: {
                     color: 'blue',
                     fontFamily: 'Verdana'
-                },
-                isOnline: true
+                }
             },
             methods: {
                 executeSearch: function() {
