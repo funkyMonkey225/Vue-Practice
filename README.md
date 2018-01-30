@@ -1,1 +1,1 @@
-Practicing Vue.js. App created with Vue CLI.
+Experimenting with Vue.js. App created with Vue CLI.
