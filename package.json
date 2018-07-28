@@ -11,6 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "mixin-deep": "^2.0.0",
     "ssri": "^6.0.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
